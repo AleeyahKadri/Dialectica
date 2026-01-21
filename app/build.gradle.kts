@@ -76,7 +76,7 @@ dependencies {
 
     // Glide
     implementation("com.github.bumptech.glide:glide:4.13.0")
-    annotationProcessor("com.github.bumptech.glide:compiler:4.13.0")
+    kapt("com.github.bumptech.glide:compiler:4.13.0")
 
     // Adapter delegates recycler view
     implementation("com.hannesdorfmann:adapterdelegates4-kotlin-dsl:4.3.2")
@@ -87,7 +87,6 @@ dependencies {
     // To use Kotlin annotation processing tool (kapt)
     kapt("androidx.room:room-compiler:$roomVersion")
     implementation("androidx.room:room-runtime:$roomVersion")
-    annotationProcessor("androidx.room:room-compiler:$roomVersion")
     // optional - Kotlin Extensions and Coroutines support for Room
     implementation("androidx.room:room-ktx:$roomVersion")
     // optional - Test helpers
